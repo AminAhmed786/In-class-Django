@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "In class Django", "In class Django\In class Django.pyproj", "{C75861D8-CBD8-4848-8A72-B65B66F02B3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C75861D8-CBD8-4848-8A72-B65B66F02B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75861D8-CBD8-4848-8A72-B65B66F02B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75861D8-CBD8-4848-8A72-B65B66F02B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75861D8-CBD8-4848-8A72-B65B66F02B3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C71CA774-43B1-4D81-9783-08F1DBE01589}
+	EndGlobalSection
+EndGlobal
