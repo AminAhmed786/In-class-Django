@@ -34,12 +34,24 @@
     <Compile Include="In_class_Django\settings.py" />
     <Compile Include="In_class_Django\urls.py" />
     <Compile Include="In_class_Django\wsgi.py" />
+    <Compile Include="MyApp1\admin.py" />
+    <Compile Include="MyApp1\apps.py" />
+    <Compile Include="MyApp1\migrations\__init__.py" />
+    <Compile Include="MyApp1\models.py" />
+    <Compile Include="MyApp1\tests.py" />
+    <Compile Include="MyApp1\views.py" />
+    <Compile Include="MyApp1\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MyApp1\templates\MyApp1\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="In_class_Django\" />
+    <Folder Include="MyApp1\" />
+    <Folder Include="MyApp1\migrations\" />
+    <Folder Include="MyApp1\templates\" />
+    <Folder Include="MyApp1\templates\MyApp1\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 

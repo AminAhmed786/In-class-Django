@@ -1,3 +1,6 @@
+from django.urls import include, re_path
+import MyApp1.views
+
 """
 In_class_Django URL Configuration
 
@@ -23,4 +26,7 @@ Including another URLconf
 urlpatterns = [
     # Uncomment the next line to enable the admin:
     #path('admin/', admin.site.urls)
+
+    re_path(r'^$', MyApp1.views.index, name='index'),
+    re_path(r'^home$', MyApp1.views.index, name='home')
 ]
