@@ -18,3 +18,7 @@ class Course(models.Model):
 class Student(models.Model):
     Name = models.CharField(max_length=25)
     Unit = models.CharField(max_length=30)
+
+class Unit(models.Model):
+    Name = models.CharField(max_length=25)
+    Unit = models.CharField(max_length=30)

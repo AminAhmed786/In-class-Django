@@ -3,8 +3,10 @@ from .models import teacher
 from .models import assessment
 from .models import Course
 from .models import Student
+from .models import Unit
 # Register your models here.
 admin.site.register(teacher)
 admin.site.register(assessment)
 admin.site.register(Course)
 admin.site.register(Student)
+admin.site.register(Unit)
