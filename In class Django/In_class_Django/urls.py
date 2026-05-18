@@ -31,8 +31,11 @@ urlpatterns = [
     path('admin/' , admin.site.urls),
     re_path(r'^$', MyApp1.views.index, name='index'),
     re_path(r'^home$', MyApp1.views.index, name='home'),
-    re_path(r'input', MyApp1.views.input_view, name='input')
-
+    re_path(r'input', MyApp1.views.input_view, name='input'),
+    path('report/', MyApp1.views.report, name='report'),
+        path('register/', MyApp1.views.register, name='register'),
+    path('login/', MyApp1.views.login_view, name='login'),
+ 
 ]
 
 

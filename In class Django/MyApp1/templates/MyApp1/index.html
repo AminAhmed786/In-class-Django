@@ -1,26 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
 <html>
-<head><title>Teaches</title></head>
+<head>
+    <title> Teacher</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            .navbar {
+                background-color: #ADD8E6;
+                border-bottom: 1px solid #b8c27a;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 10px;
+            }
+
+            .logo {
+                font-size: 35px;
+                font-weight: bold;
+            }
+
+            .nav-links a {
+                text-decoratonLnone;
+                color: black;
+                margin-left: 18px;
+                font-size: 15px;
+            }
+
+                .nav-links a:hover {
+                    text-decoration: underline;
+                }
+
+            .page-content {
+                padding: 10px;
+            }
+            .logo {
+                height: 140px;
+                width: 525px;
+            }
+        </style>
+</head>
 
 <body>
 
-    <strong>teachers</strong>
+    <!--NAVBAR -->
+    <div class="navbar">
+        <div class="logo">
+            <a class="navbar-brand" href="#"><img class="logo" src="{% static 'BSSS.webp' %}" alt="BSSS"></a>
+        </div>
 
-    {% if content %}
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Unit Outline</a>
+            <a href="#">Academic Record</a>
+            <a href="#">Results</a>
+            <a href="{% url 'login' %}">Login / Sign Up</a>
+            <a href="#">Help</a>
+        </div>
+    </div>
+
+    <!--content -->
+    <div class="page-content"
+        <h1>Teacher</h1>
+        <p>Logged in as: Admin</p>
+        <h3>Teachers</h3>
+       {% if content %}
     <table>
         <tr>
             <th>Name</th>
             <th>Teaching Area</th>
-            </tr>
-            {% for teach in content %}
-            <tr>
-                 <td>{{teach.Name}}</td>
-                 <td>{{teach.Area}}</td>
-            </tr>
-            {% endfor %}
-                </table>
+        </tr>
+        {% for teach in content %}
+        <tr>
+            <td>{{teach.Name}}</td>
+            <td>{{teach.Area}}</td>
+        </tr>
+        {% endfor %}
+    </table>
     {% else%}
     <strong>No data!!</strong>
     {% endif %}
     <p><a href="{% url 'input' %}">input new teachers</a></p>
+    <p><a href="{% url 'report'%}">PDF report</a></p>
+    </div>
+
 </body>
 </html>
+

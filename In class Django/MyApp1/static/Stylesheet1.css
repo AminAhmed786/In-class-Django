@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <itle>Teacher</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+}
+        .navbar {
+            background-color: #eef5b8;
+            border-bottom: 1px solid #b8c27a;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: space-betweem;
+            padding: 0 25px;
+}
+        .logo {
+            font-size:: 20px;
+            font-weight:: bold;
+}
+        .nav-links a{
+            text-decoratonLnone;
+            clour: black;
+            margin-left: 25px;
+            font-size:14px;
+}
+        .nav-links a:hover {
+            text-decoration: underline;
+}
+        .page-content{
+            padding:10px;
+}
+    </style>
+</head>
+
+<body>
+
+<!--NAVBAR -->
+<div class="navbar">
+    <div class="logo">
+        teacher
+    </div>
+    
+        <div class="nav-links">
+        <a href="#">Upload something</a>
+        <a href="#">Home</a>
+        <a href="#">Login<a/>
+        <a href="#">address teacher<a/>
+        <a href="#">Sign Up<a/>
+    </div>
+  </div>
+
+<!--content -->
+<div class="page-content"
+        <h1>Teacher</h1>
+        <p>Logged in as: admin</p>
+
+        <h3>Teachers</h3>
+        
+        {% for teacher in teachers %}
+            <p>{{ teacher.name }} &nbsp;&nbsp;{{ teacher.teaching_area }}</p>
+        {% empty %}
+            <p>nobr teachers yet</p>
+        {% endfor %}
+
+        <br>
+        <a href="#">input new teacher</a>
+</div>
+
+</body>
+</html>
+    
